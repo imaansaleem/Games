@@ -38,6 +38,9 @@ Each zombie must have different values for its attributes (i.e., life, attack, a
 
 Zombie cannot move to locations occupied by other zombies. When Alien finds a pod, the attack must target only ONE (1) zombie closest to the pod. If there are two or more zombies closest to the pod, choose any one of them at random. For defeated zombies, the game should skip their turns, but their attributes must remain displayed throughout the game.
 
+### 6.5. Game Controls
+The player plays the game by typing commands. The following shows the commands:
+
 | Name         | Appearance | Description                                              |
 |--------------|------------|----------------------------------------------------------|
 | Arrow        | ^ (up),    | Changes Alien’s direction of movement.                 |
@@ -52,3 +55,20 @@ Zombie cannot move to locations occupied by other zombies. When Alien finds a po
 | Empty Space  |            | Just an empty space on the board.                      |
 | Trail        | .          | Left by Alien when it moves.                           |
 |              |            | Reset to a random game object (except Trail) after Alien’s turn ends. |
+
+| Command | Description                                                |
+|---------|------------------------------------------------------------|
+| up      | Alien to move up.                                         |
+| down    | Alien to move down.                                       |
+| left    | Alien to move left.                                       |
+| right   | Alien to move right.                                      |
+| arrow   | Switch the direction of an arrow object in the game board. |
+|         | (The player will be asked to enter the row and column of the arrow object to switch, followed by the direction of the arrow object to switch to.) |
+| help    | List and describe the commands that the player can use in the game. |
+| save    | Save the current game to a file.                          |
+|         | (The player will be asked to enter the name of the file to save to.) |
+| load    | Load a saved game from a file.                            |
+|         | (The player will be asked to enter the name of the file to load from.) |
+| quit    | Quit the game while still in play.                       |
+|         | (The player will be asked to confirm his/her decision.)  |
+
