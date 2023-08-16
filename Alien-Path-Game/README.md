@@ -38,8 +38,9 @@ Each zombie must have different values for its attributes (i.e., life, attack, a
 
 Zombie cannot move to locations occupied by other zombies. When Alien finds a pod, the attack must target only ONE (1) zombie closest to the pod. If there are two or more zombies closest to the pod, choose any one of them at random. For defeated zombies, the game should skip their turns, but their attributes must remain displayed throughout the game.
 
-### 6.5. Game Controls
-The player plays the game by typing commands. The following shows the commands:
+### 6.4. Game Objects
+Apart from the game characters, the game board also contains game objects that Alien can interact 
+with. Here are the game objects:
 
 | Name         | Appearance | Description                                              |
 |--------------|------------|----------------------------------------------------------|
@@ -55,6 +56,9 @@ The player plays the game by typing commands. The following shows the commands:
 | Empty Space  |            | Just an empty space on the board.                      |
 | Trail        | .          | Left by Alien when it moves.                           |
 |              |            | Reset to a random game object (except Trail) after Alien’s turn ends. |
+
+### 6.5. Game Controls
+The player plays the game by typing commands. The following shows the commands:
 
 | Command | Description                                                |
 |---------|------------------------------------------------------------|
