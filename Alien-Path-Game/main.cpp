@@ -12,7 +12,6 @@ int main()
     string input;
     srand(time(0));
 
-    cout << "Assignment (Part 1)" << endl;
     cout << "Let's Get Started!" << endl << endl;
 
     do{
